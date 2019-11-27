@@ -1,0 +1,50 @@
+Slide: 
+http://www.slideshare.net/pekkaklarck/robot-framework-introduction
+http://www.slideshare.net/boriau/robot-framework
+
+RIDE
+
+1. Introduction
+An introduction to Robot Framework http://robotframework.org © Copyright Nokia Networks Creative Commons Attribution 3.0 License
+
+Fast facts
+? Generic test automation framework 
+– Utilizes the keyword-driven testing approach 
+– Suitable for both “normal” test automation and ATDD 
+? Implemented with Python 
+– Runs also on Jython (JVM) and IronPython (.NET) 
+– Can be extended natively using Python or Java 
+– Other languages supported via a remote interface 
+? Open source 
+– Hosted on GitHub, Apache 2 license 
+– Sponsored by Nokia Networks 
+– Rich ecosystem and very active community 
+
+
+2. Simple keyword-driven syntax
+Test case: 
+Valid Login
+	Open Browser To Login page
+	Input Username	demo
+	Input Password	mode
+	Welcome Page Should be Open
+	[Teardown]	Close Browser
+
+3. Data-driven tests
+Test Cases		USER NAME	PASSWORD
+Invalid Username	invalid		${VALID PWD}
+Invalid Password	${VALID USER}	invalid
+Both Invalid		invalid		whatever
+Empty Username		${EMPTY}	${VALID PWD}
+Empty Password		${VALID USER}	${EMPTY}
+Both Empty		${EMPTY}	${EMPTY}
+
+
+Demo with python language: https://bitbucket.org/robotframework/robotdemo
+    Downloading demo package
+    Demo application
+    Test cases
+    Test library
+    Generated results
+    Running demo
+

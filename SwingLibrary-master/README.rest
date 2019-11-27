@@ -1,0 +1,27 @@
+SwingLibrary
+============
+
+Swing Library is a Robot Framework library for testing Java Swing
+applications.  Usage instructions are in the Wiki__.
+
+__ https://github.com/robotframework/SwingLibrary/wiki
+
+Downloads are available at `Releases 1.9.9`__ 
+
+__ https://github.com/robotframework/SwingLibrary/releases/tag/1.9.9
+
+Keyword documentation for the latest version (1.9.9) are available `here`__
+
+__ http://robotframework.github.com/SwingLibrary/SwingLibrary.html
+
+This project was originally hosted in `Google Code`__
+
+__ http://code.google.com/p/robotframework-swinglibrary/
+
+
+Building SwingLibrary
+---------------------
+
+See `BUILD.rest`__ for development, build and release instructions.
+
+__ https://github.com/robotframework/SwingLibrary/blob/master/BUILD.rest
